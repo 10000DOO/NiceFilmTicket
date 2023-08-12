@@ -1,0 +1,32 @@
+spring:
+  config:
+    active:
+      on-profile: local
+  datasource:
+    url: jdbc:postgresql://localhost:5432/nftlocal
+    username: yjmint
+    password:
+    driver-class-name: org.postgresql.Driver
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 50MB
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        #format_sql: true
+        default_batch_fetch_size: 100
+
+#logging:
+  #config: classpath:log4j2.xml
+#  level:
+#    org:
+#      hibernate:
+#        SQL: debug
+
+#decorator:
+  #datasource:
+    #p6spy:
+      #enable-logging: true

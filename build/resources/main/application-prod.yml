@@ -1,0 +1,21 @@
+spring:
+  config:
+    active:
+      on-profile: prod
+  datasource:
+    url: ENC(A5JXt2sa7LVmlhyYLDr7NbZ9FoeqWbc1vJOyP88ogD8S5/3Zfa/21OKiSe1w2GEttxH9vvQFjRcFh7AVmCjVqvz59IpKRGFB7d0vO+DIilF5MIQX7etgGwJkzlpwLS6l8JaqMf6hFjFqhuz2oOuMUA==)
+    username: ENC(NFHSDxIpsHAxXPc5USJjwy2ls1+dw+my)
+    password: ENC(66kpNgUZ4f9g9208wME5pjbaBJK/2kiO)
+    driver-class-name: org.postgresql.Driver
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 50MB
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        #show_sql: true
+        format_sql: true
+        default_batch_fetch_size: 100
